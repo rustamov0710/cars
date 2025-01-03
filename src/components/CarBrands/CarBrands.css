@@ -5,7 +5,8 @@
     
 }
 .item{
-    width: 216px;
+    max-width: 216px;
+    width: 100%;
     height: 168px;
     border: solid 1px #eaeaea;
     justify-content: center;
@@ -35,7 +36,7 @@ border: solid 1px #cbcbcb;
     }
 }
 @media only screen and (max-width: 458px){
-    .list-two{
-        grid-template-columns: repeat(1, 1fr);
-    }
+        .item{
+
+        }
 }
