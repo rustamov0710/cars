@@ -26,14 +26,19 @@ const HeroAndFilter = () => {
           {/* Image Placeholder */}
           <div className="flex-1">
             <div className="w-full h-64 bg-gray-300 flex items-center justify-center rounded-md">
-              <p className="text-gray-500">Место для изображения</p>
+                <img
+                  className="w-full h-full object-cover"
+                  src="https://via.placeholder.com/500x300"
+                  alt="Placeholder"
+                />
+  
             </div>
           </div>
         </div>
       </section>
 
       {/* Filter Section */}
-      <section className="bg-white py-12 shadow-md">
+      <section className="bg-white py-12">
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">
             Подбор авто
