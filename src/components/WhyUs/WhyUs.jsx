@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyUs = () => {
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl lg:text-3xl font-bold text-center lg:text-left mb-10">
           Почему мы?
