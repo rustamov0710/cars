@@ -55,7 +55,7 @@ const NewsAndReviews = () => {
                     alt="Yandex"
                     className="w-10 h-10 mr-4"
                   />
-                  <div className="mr-[130px]">
+                  <div className="">
                     <div className="flex items-center gap-2">
                       <p className="text-gray-500 text-sm">Яндекс </p>
                       <img src="./yan.svg" alt="yandex" />
@@ -63,7 +63,7 @@ const NewsAndReviews = () => {
                     <h4 className="text-lg font-semibold">Александра</h4>
                     <p className="text-gray-500 text-sm">Апрель 2024</p>
                   </div>
-                  <span className="text-yellow-500 font-bold">★★★★★</span>
+                  <span className="text-yellow-500 font-bold ml-auto">★★★★★</span>
                 </div>
                 <p className="text-gray-600 mb-4 flex-1">
                   Я очень доволен покупкой машины в данном автосалоне. Все
