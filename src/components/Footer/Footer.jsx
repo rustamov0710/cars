@@ -5,9 +5,10 @@ const Footer = () => {
   return (
     <footer className="">
       <div className="container px-4 border-t pt-6 ">
-        <div className="flex ">
-          {/* Logo and Info */}
-          <div className="w-[313px] mr-[86px] mb-4 sm:mb-0">
+        <div className="flex footer-two">
+         <div className="flex footer">
+           {/* Logo and Info */}
+           <div className="w-[313px] mr-[86px] mb-4 sm:mb-0">
           <a href="/" className="text-2xl font-bold text-blue-600">
           <img src="./YouCar.svg" alt="logo" />
           </a>
@@ -28,7 +29,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Links */}
+          <div className="flex">
+            {/* Links */}
           <div className="w-[89px] mb-4 mr-[80px] sm:mb-0">
             <h3 className="font-semibold text-gray-700 mb-2">Компания</h3>
             <ul className="text-sm text-gray-600 space-y-1 gap-6">
@@ -51,9 +53,11 @@ const Footer = () => {
               <li><a href="#" className="hover:text-blue-600">Из Кореи</a></li>
             </ul>
           </div>
+          </div>
+         </div>
 
           {/* Brands */}
-          <div className="w-[545px] sm:w-1/5">
+          <div className="max-w-[545px] w-[100%] sm:w-1/5">
             <h3 className="font-semibold text-gray-700 mb-2">Марки</h3>
             <ul className="list-three">
                 <li className="flex items-start flex-col gap-2">
@@ -96,7 +100,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-6 mb-3 flex justify-between items-center text-sm text-gray-500 pt-4 pl-[355px]">
+        <div className="mt-6 mb-3 flex justify-between items-center text-sm text-gray-500 pt-4">
           <p>Политика конфиденциальности</p>
           <p>Сделано в UserTech</p>
         </div>

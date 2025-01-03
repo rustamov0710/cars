@@ -3,3 +3,39 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 50px;
 }
+
+@media only screen and (max-width: 1330px){
+    .footer{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+@media only screen and (max-width: 960px){
+    .list-three{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 757px){
+    .list-three{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 647px){
+    .footer-two{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .list-three{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media only screen and (max-width: 579px){
+    .list-three{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (max-width: 566px){
+    .list-three{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
