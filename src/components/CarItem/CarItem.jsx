@@ -3,37 +3,52 @@ import React from "react";
 const CarItem = ({ car }) => {
   const {
     image,
-    name,
-    price,
+    mark,
+    cost,
     milage,
     engine,
     drive,
     country,
+    checkpoint,
+    horsepower,
+    volume,
+    model,
   } = car;
+console.log(car);
 
   return (
-    <div className="bg-white shadow-md rounded-lg overflow-hidden">
-      <img
-        src={image[1]}
-        alt={name}
-        className="w-full h-48 object-cover"
-      />
-      <div className="p-4">
-        <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
-        <p className="text-blue-500 text-lg font-bold">{price} $</p>
-        <ul className="text-gray-600 text-sm mt-2 space-y-1">
-          <li>{milage} км</li>
-          <li>{engine}</li>
-          <li>{drive}</li>
-          <li>{country}</li>
-        </ul>
+    <li class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden">
+    <img
+      class="w-full h-48 object-cover"
+      src={image[1]}
+      alt={mark}
+    />
+    <div class="p-4">
+      <h2 class="text-lg text-gray-800">
+        {mark} {model}
+      </h2>
+      <p class="text-xl font-bold text-gray-900 mt-2">${cost}</p>
+      <div class="text-sm text-gray-600 mt-2 flex gap-9">
+        <div className="">
+        <p>{milage} км</p>
+        <p>{volume}/{horsepower} л.с./{engine}</p>
+        <p>{country}</p>
+
+        </div>
+        <div className="">
+        <p>{drive}</p>
+        <p>{checkpoint}</p>
+
+        </div>
       </div>
-      <div className="p-4 border-t">
-        <button className="text-gray-500 hover:text-red-500">
-          ♥ Добавить в избранное
-        </button>
-      </div>
+      <button
+        class="mt-4 w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+      >
+        Подробнее
+      </button>
     </div>
+  </li>
+  
   );
 };
 

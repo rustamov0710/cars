@@ -1,11 +1,11 @@
 import React from "react";
-
+import './CarBrands.css'
 const CarBrands = () => {
   return (
-    <div className="bg-gray-100 py-10">
+    <div className=" py-10">
       <div className="container mx-auto px-4">
         {/* Brand Logos Grid */}
-        <div className="grid grid-cols-4 gap-6">
+        <ul className="list-two">
           {[
             { name: "Acura", logo: "acura-logo" },
             { name: "Honda", logo: "honda-logo" },
@@ -25,34 +25,48 @@ const CarBrands = () => {
             { name: "Mercedes", logo: "mercedes-logo" },
             { name: "Audi", logo: "audi-logo" },
           ].map((brand, index) => (
-            <div
+            <li
               key={index}
-              className="flex flex-col items-center space-y-2 hover:bg-white shadow-sm p-4 rounded-lg cursor-pointer"
+              className="flex flex-col items-center space-y-2 item hover:shadow-lg p-4 cursor-pointer "
             >
               <img
-                src={`/logos/${brand.logo}.png`}
+                src={`./${brand.logo}.png`}
                 alt={`${brand.name} logo`}
                 className="h-16 w-16 object-contain"
               />
               <span className="text-sm font-medium text-gray-700">
                 {brand.name}
               </span>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
 
         {/* Call to Action Section */}
-        <div className="mt-10 bg-blue-500 text-white p-6 rounded-lg text-center">
-          <h2 className="text-lg font-semibold">
+            <div className="bg-blue-500 text-white py-8 px-6 rounded-lg mt-[50px]">
+      <div className="container mx-auto flex flex-wrap lg:flex-nowrap items-center">
+        {/* Text Section */}
+        <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
+          <h2 className="text-2xl lg:text-3xl font-bold mb-4">
             Не можете определиться с выбором?
           </h2>
-          <p className="mt-2 text-sm">
+          <p className="text-sm w-[383px] lg:text-base mb-6 ">
             Оставьте заявку, и наши менеджеры проконсультируют вас!
           </p>
-          <button className="mt-4 px-6 py-2 bg-white text-blue-500 font-medium rounded shadow hover:bg-gray-200">
+          <button className="bg-blue-300 text-white px-9  py-4 hover:bg-blue-600 text-[12px] rounded">
             Оставить заявку
           </button>
         </div>
+
+        {/* Image Section */}
+        <div className="w-full lg:w-1/2 flex justify-center ml-[60px]">
+          <img
+            src="/photo.png" // Replace with your actual image path
+            alt="Covered car"
+            className="max-w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   );

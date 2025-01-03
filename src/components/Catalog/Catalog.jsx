@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CarItem from "../CarItem/CarItem";
+import './Catalog.css'
 
 const Catalog = () => {
   const [cars, setCars] = useState([]);
@@ -31,11 +32,11 @@ const Catalog = () => {
   return (
     <section className="container mx-auto py-12">
       <h2 className="text-2xl font-bold text-gray-800 mb-6">Автомобильный каталог</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <ul className="list">
         {cars.map((car) => (
           <CarItem key={car.id} car={car} />
         ))}
-      </div>
+      </ul>
       <div className="text-right mt-6">
         <a
           href="#"

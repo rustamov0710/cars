@@ -1,0 +1,27 @@
+.right-section{
+    position: relative;
+}
+.right-section::before{
+    content: "";
+    background-image: url('../../../public/n1.png');
+    background-position: center;
+    position: absolute;
+    top: 173px;
+    right: -15px;
+    background-size: 155px , 158px;
+    width: 155px;
+    height: 158px;
+    z-index: 1;
+}
+.right-section::after{
+    content: "";
+    background-image: url('../../../public/wheels.png');
+    background-position: center;
+    position: absolute;
+    top: 197px;
+    right: 87px;
+    background-size: 250px , 134px;
+    width: 250px;
+    height: 134px;
+    z-index: 0;
+}

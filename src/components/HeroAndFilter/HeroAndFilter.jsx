@@ -2,22 +2,22 @@ import React from "react";
 
 const HeroAndFilter = () => {
   return (
-    <div>
+    <div className="mt-6">
       {/* Hero Section */}
-      <section className="bg-gray-100 py-12">
-        <div className="container mx-auto flex flex-col lg:flex-row items-center">
+      <section className="bg-gray-100 w-[1296px] container py-12 px-[40px] rounded-md ">
+        <div className="mx-auto container flex flex-col lg:flex-row items-center">
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left mb-6 lg:mb-0">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               НОВЫЙ GEELY MONJARO!
             </h1>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 w-[400px]">
               Кроссовер Monjaro - премиальная модель Geely по уровню дизайна,
               материалов и технологий.
             </p>
             <a
               href="#"
-              className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600"
+              className="bg-blue-500 text-white px-10  py-4 hover:bg-blue-600 text-[12px] rounded "
             >
               Подробнее
             </a>
@@ -25,10 +25,10 @@ const HeroAndFilter = () => {
 
           {/* Image Placeholder */}
           <div className="flex-1">
-            <div className="w-full h-64 bg-gray-300 flex items-center justify-center rounded-md">
+            <div className="w-full h-64 flex items-center justify-center rounded-md">
                 <img
                   className="w-full h-full object-cover"
-                  src="https://via.placeholder.com/500x300"
+                  src="hero_car.png"
                   alt="Placeholder"
                 />
   
