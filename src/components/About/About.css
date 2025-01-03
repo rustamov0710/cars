@@ -1,27 +1,94 @@
-.right-section{
+.right-section {
     position: relative;
 }
-.right-section::before{
+
+.right-section::before {
     content: "";
     background-image: url('../../../public/n1.png');
     background-position: center;
     position: absolute;
-    top: 173px;
-    right: -15px;
-    background-size: 155px , 158px;
+    top: 173px; /* Kichik ekranlar uchun moslashuv */
+    right: -10px;
+    background-size: 155px 158px;
     width: 155px;
     height: 158px;
     z-index: 1;
 }
-.right-section::after{
+
+.right-section::after {
     content: "";
     background-image: url('../../../public/wheels.png');
     background-position: center;
     position: absolute;
     top: 197px;
-    right: 87px;
-    background-size: 250px , 134px;
+    right: 90px;
+    background-size: 250px 134px;
     width: 250px;
     height: 134px;
     z-index: 0;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Large ekranlar uchun */
+@media only screen and (max-width: 1024px) {
+    .right-section::before {content: none;
+    }
+    
+    .right-section::after {content: none;
+    }
+    .central{
+        flex-direction: column-reverse;
+    }
+    .about{
+        height: 750px;
+    }
+    .left-section{
+        margin-top: 100px;
+    }
+    .right-section{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+
+@media only screen and (max-width: 832px) {
+    .about{
+        height: 775px;
+    }
+}
+@media only screen and (max-width: 627px) {
+    .about{
+        height: 800px;
+    }
+}
+@media only screen and (max-width: 528px) {
+    .about{
+        height: 827px;
+    }
+}
+@media only screen and (max-width: 466px) {
+    .about{
+        height: 850px;
+    }
+    .right-section{
+        text-align: start;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .about{
+        height: 870px;
+    }
+}
+@media only screen and (max-width: 351px) {
+    .about{
+        height: 900px;
+    }
+}
+@media only screen and (max-width: 331px) {
+    .about{
+        height: 920px;
+    }
 }

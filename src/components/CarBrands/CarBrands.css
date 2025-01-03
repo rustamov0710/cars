@@ -12,3 +12,28 @@
 .item:hover{
 border: solid 1px #cbcbcb;
 }
+@media only screen and (max-width: 1330px){
+    .list-two{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media only screen and (max-width: 1110px){
+    .list-two{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (max-width: 884px){
+    .list-two{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 667px){
+    .list-two{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 458px){
+    .list-two{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -27,7 +27,7 @@ const CarBrands = () => {
           ].map((brand, index) => (
             <li
               key={index}
-              className="flex flex-col items-center space-y-2 item hover:shadow-lg p-4 cursor-pointer "
+              className="flex flex-col items-center  item hover:shadow-lg cursor-pointer "
             >
               <img
                 src={`./${brand.logo}.png`}
@@ -49,7 +49,7 @@ const CarBrands = () => {
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">
             Не можете определиться с выбором?
           </h2>
-          <p className="text-sm w-[383px] lg:text-base mb-6 ">
+          <p className="text-sm max-w-[383px] w-[100%] lg:text-base mb-6 ">
             Оставьте заявку, и наши менеджеры проконсультируют вас!
           </p>
           <button className="bg-blue-300 text-white px-9  py-4 hover:bg-blue-600 text-[12px] rounded">

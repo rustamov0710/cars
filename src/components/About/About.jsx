@@ -2,10 +2,10 @@ import React from "react";
 import './About.css'
 const AboutUs = () => {
   return (
-    <div className="bg-gray-100 rounded-md  container  w-[1276px] h-[395px] py-16 px-5">
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start">
+    <div className="bg-gray-100 rounded-md  container  about w-[1276px] h-[395px] py-16 px-5">
+      <div className="container mx-auto px-4 flex flex-col central lg:flex-row items-center lg:items-start">
         {/* Left Section */}
-        <div className="relative w-full lg:w-1/2 mb-10 lg:mb-0 -mt-[65px]">
+        <div className="left-section relative w-full lg:w-1/2 mb-10 lg:mb-0 -mt-[65px]">
   {/* Background Blue Blocks */}
   <img
     src="/lines.png"
@@ -37,23 +37,6 @@ const AboutUs = () => {
         </div>
 
 
-
-        {/* <div className="flex items-center space-x-4">
-          <div className="w-[250px] h-[134px] flex items-center justify-center">
-            <img
-              src="/wheels.png" // Placeholder for tire image
-              alt="Tire"
-              className="w-[250px] h-[134px]"
-            />
-          </div>
-          <div className="w-[155px] h-[158px] flex items-center justify-center">
-            <img
-              src="/n1.png" // Placeholder for tire image
-              alt="Tire"
-              className="w-[155px] h-[158px]"
-            />
-          </div>
-        </div> */}
       </div>
     </div>
   );
