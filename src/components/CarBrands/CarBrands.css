@@ -1,6 +1,7 @@
 .list-two{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+
     
 }
 .item{
@@ -8,6 +9,7 @@
     height: 168px;
     border: solid 1px #eaeaea;
     justify-content: center;
+    margin: 0 auto;
 }
 .item:hover{
 border: solid 1px #cbcbcb;
