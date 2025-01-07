@@ -1,0 +1,37 @@
+.list-two{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    
+}
+.item{
+    max-width: 216px;
+    width: 100%;
+    height: 168px;
+    border: solid 1px #eaeaea;
+    justify-content: center;
+    margin: 0 auto;
+}
+.item:hover{
+border: solid 1px #cbcbcb;
+}
+@media only screen and (max-width: 1330px){
+    .list-two{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media only screen and (max-width: 1110px){
+    .list-two{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (max-width: 884px){
+    .list-two{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 667px){
+    .list-two{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
